@@ -952,7 +952,7 @@ This multidisciplinary approach reflects real-world enterprise software developm
 
 ## 📱 Patient Mobile Application
 
-(Add Mobile Screenshots Here)
+
 
 - Login
 - Registration
@@ -969,7 +969,7 @@ This multidisciplinary approach reflects real-world enterprise software developm
 
 ## 🌐 Doctor Dashboard
 
-(Add Doctor Dashboard Screenshots Here)
+
 
 - Dashboard
 - Patient Management
@@ -983,7 +983,7 @@ This multidisciplinary approach reflects real-world enterprise software developm
 
 ## 🛡 Admin Dashboard
 
-(Add Admin Dashboard Screenshots Here)
+
 
 - User Management
 - Hospital Management
@@ -995,7 +995,7 @@ This multidisciplinary approach reflects real-world enterprise software developm
 
 ## 🤖 Artificial Intelligence
 
-(Add AI Screenshots Here)
+
 
 - Medical Chatbot
 - Laboratory Report Analysis
@@ -1006,7 +1006,7 @@ This multidisciplinary approach reflects real-world enterprise software developm
 
 ## ❤️ Wearable Device
 
-(Add Wearable Images Here)
+
 
 - Device
 - BLE Connection
@@ -1049,54 +1049,6 @@ El-Mostawsaf
 ├── 📄 Documentation
 
 └── 🎓 Graduation Book
-```
-
----
-
-# 🛠 Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/USERNAME/El-Mostawsaf.git
-```
-
----
-
-## Mobile
-
-```bash
-flutter pub get
-
-flutter run
-```
-
----
-
-## Backend
-
-```bash
-pip install -r requirements.txt
-
-uvicorn app.main:app --reload
-```
-
----
-
-## Environment Variables
-
-Create your `.env` file.
-
-```env
-SUPABASE_URL=
-
-SUPABASE_KEY=
-
-DATABASE_URL=
-
-JWT_SECRET=
-
-GEMINI_API_KEY=
 ```
 
 ---
@@ -1313,31 +1265,6 @@ Feedback, suggestions, and professional discussions are always welcome.
 
 ---
 
-# 💼 Open for Opportunities
-
-We are passionate software engineers interested in solving real-world healthcare challenges through modern technologies.
-
-This project reflects our experience in:
-
-- Mobile Development
-
-- Backend Engineering
-
-- Artificial Intelligence
-
-- Cloud Computing
-
-- Database Engineering
-
-- Cybersecurity
-
-- IoT Systems
-
-- Enterprise Software Architecture
-
-We are always excited to connect with recruiters, software engineers, healthcare innovators, and technology companies.
-
----
 
 # ⭐ Support
 
