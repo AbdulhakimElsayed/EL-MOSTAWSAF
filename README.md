@@ -1,349 +1,1376 @@
 <div align="center">
 
-# 🏥 El-Mostawsaf — المستوصف
+# 🏥 El-Mostawsaf
 
 ### AI-Powered Smart Hospital Ecosystem
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)](https://flutter.dev)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi)](https://fastapi.tiangolo.com)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-4169E1?logo=postgresql)](https://supabase.com)
-[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)](https://docker.com)
+#### Intelligent Healthcare • Artificial Intelligence • IoT • Cloud Computing • Secure Medical Platform
 
-**Flutter · FastAPI · Node.js · PostgreSQL · TensorFlow · Gemini AI · Docker**
-
-[View Repository](#) · [Report Bug](#) · [Request Feature](#)
+<img src="images/logo.png" width="180"/>
 
 ---
 
-> ⚠️ **Official Notice:** This is the **sole and original** El-Mostawsaf project in Egypt (2026).  
-> Any repository with a similar name (e.g., `El-Mostawsaf-HomeNursingPlatform`) is **not affiliated** with this project.
+![Flutter](https://img.shields.io/badge/Flutter-Mobile-blue?style=for-the-badge&logo=flutter)
+
+![Python](https://img.shields.io/badge/FastAPI-Backend-success?style=for-the-badge&logo=fastapi)
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?style=for-the-badge&logo=postgresql)
+
+![Supabase](https://img.shields.io/badge/Supabase-Cloud-success?style=for-the-badge&logo=supabase)
+
+![Gemini](https://img.shields.io/badge/Google-Gemini-orange?style=for-the-badge)
+
+![AI](https://img.shields.io/badge/Artificial-Intelligence-red?style=for-the-badge)
+
+![IoT](https://img.shields.io/badge/IoT-Wearable-purple?style=for-the-badge)
+
+![Healthcare](https://img.shields.io/badge/Healthcare-System-brightgreen?style=for-the-badge)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+# 🌍 Overview
 
-- [Overview](#-overview)
-- [The Problem We Solve](#-the-problem-we-solve)
-- [System Architecture](#-system-architecture)
-- [Core Components](#-core-components)
-- [AI & Machine Learning Engine](#-ai--machine-learning-engine)
-- [Tech Stack](#-tech-stack)
-- [Performance Metrics](#-performance-metrics)
-- [Getting Started](#-getting-started)
-- [Project Team](#-project-team)
-- [Future Roadmap](#-future-roadmap)
-- [License](#-license)
-- [Official References](#-official-references)
+Healthcare today suffers from fragmented medical records, delayed diagnosis, limited access to specialists, and the absence of continuous patient monitoring.
+
+**El-Mostawsaf** is a next-generation AI-powered healthcare ecosystem designed to solve these challenges by combining modern software engineering, artificial intelligence, cloud computing, wearable IoT devices, and secure medical data management into one integrated platform.
+
+Rather than being a traditional hospital application, El-Mostawsaf creates a complete digital healthcare environment where patients, doctors, administrators, AI services, and wearable devices work together seamlessly.
+
+The platform enables healthcare providers to deliver faster, smarter, and more secure medical services while improving the overall patient experience.
 
 ---
 
-## 🌐 Overview
+# 🎯 Project Vision
 
-Egypt's healthcare system faces a critical convergence of challenges: fragmented medical records across incompatible hospital databases, a severe specialist shortage with **80% of physicians concentrated in major cities**, insufficient continuous monitoring for chronic disease patients, and delayed emergency response caused by inaccessible patient data.
+Our vision is to build a modern healthcare ecosystem capable of assisting both patients and healthcare professionals through intelligent technologies.
 
-**El-Mostawsaf** (Arabic: المستوصف — *The Dispensary*) is our answer — a unified, intelligent healthcare fabric that seamlessly connects patients, physicians, and administrators through a single integrated platform. It is a production-grade, AI-driven ecosystem that unifies Electronic Medical Records, real-time IoT vital monitoring, and multimodal clinical AI into one cohesive solution built specifically for Egypt's healthcare landscape.
+The platform aims to:
 
----
-
-## 🚨 The Problem We Solve
-
-| Challenge | Impact | Our Solution |
-|-----------|--------|--------------|
-| Fragmented Medical Records | Duplicate tests, missed diagnoses, medication errors | Centralized cloud-based EMR with full audit trails |
-| Specialist Access Gap | 3–6 month wait times; zero rural access | AI-assisted triage + integrated telemedicine |
-| No Continuous Monitoring | Chronic crises go undetected between visits | Real-time IoT vital monitoring with anomaly alerts |
-| Language Barrier in AI | No colloquial Egyptian Arabic medical AI exists | RAG chatbot trained on 136,000 Arabic Q&A pairs |
-| Delayed Emergency Response | Critical patient data unreachable in emergencies | Emergency SOS with live location + instant medical profile |
-| Data Security Risks | Paper records vulnerable to loss and theft | AES-256 encryption, RBAC, and HIPAA-inspired compliance |
+- Improve patient healthcare accessibility.
+- Centralize medical records into one secure platform.
+- Assist doctors using Artificial Intelligence.
+- Enable continuous remote patient monitoring.
+- Reduce diagnosis time.
+- Improve healthcare quality.
+- Support future healthcare innovation.
 
 ---
 
-## 🏗 System Architecture
+# 🚀 Why El-Mostawsaf?
 
-The system follows a **multi-layered architecture** with strict separation of concerns across seven distinct layers:
+Unlike traditional healthcare applications, El-Mostawsaf combines multiple technologies into one intelligent platform.
 
-| Layer | Responsibility | Technologies |
-|-------|----------------|--------------|
-| **Presentation** | Mobile app + web portals | Flutter, HTML5/CSS3, Bootstrap 5, JavaScript ES6+ |
-| **Backend & API** | Business logic, REST endpoints, auth | Node.js/Express, FastAPI, JWT, RESTful APIs |
-| **AI & Diagnostic** | LLM inference, vision models, NLP | Gemini API, MedGemma-4B, LangChain, FAISS, ChromaDB |
-| **IoT & Wearable** | BLE telemetry, vital streaming | BLE Protocol, Python anomaly detection |
-| **Data Storage** | Relational DB, file storage, vectors | PostgreSQL (Supabase), Firebase Storage, ChromaDB |
-| **Real-Time Comms** | Live updates, chat, monitoring | Socket.io, WebSockets, Server-Sent Events (SSE) |
-| **Security & Compliance** | Auth, encryption, auditing | JWT, AES-256, RBAC, RLS, HTTPS/TLS |
+✅ Electronic Medical Records
 
----
+✅ Artificial Intelligence
 
-## 🧩 Core Components
+✅ Medical Image Analysis
 
-### 📱 1. Patient Mobile Application (Flutter)
+✅ Laboratory Report Analysis
 
-Built with **Clean Architecture** (Presentation / Domain / Data layers) following the MVC pattern.
+✅ Wearable IoT Monitoring
 
-**Key Capabilities:**
-- Secure registration and biometric authentication with encrypted local storage
-- Personal **Electronic Health Record (EHR)** — medical history, allergies, prescriptions, and chronic diseases
-- Upload and OCR-scan lab reports; submit radiology images for AI-powered analysis
-- Native **Arabic AI chatbot** for symptom checking and preliminary triage
-- Real-time vital signs dashboard from the BLE wearable (Heart Rate, SpO₂, Temperature)
-- Smart booking and referral system — AI suggests the right specialty and books the nearest clinic
-- Integrated **telemedicine** for video consultations without leaving the app
-- **Emergency SOS mode** — shares live location and a summarized medical profile with the nearest hospital
-- Full **Arabic/English localization** with RTL support
+✅ Doctor Web Dashboard
+
+✅ Smart Appointment Management
+
+✅ Emergency Response System
+
+✅ Secure Medical Database
+
+✅ Cloud Infrastructure
+
+✅ Real-Time Monitoring
+
+✅ AI Clinical Decision Support
 
 ---
 
-### 👨‍⚕️ 2. Doctor Web Dashboard
+# 🏗 Complete Healthcare Ecosystem
 
-**Key Capabilities:**
-- Personalized dashboard with daily KPIs: Today's Appointments, Upcoming, and Completed
-- Patient Medical Records modal: Medical History, AI Analysis, Lab Results, New Record, Schedule
-- Real-time vital feed from patient wearables with color-coded risk indicators (🟢 Green / 🟡 Amber / 🔴 Red)
-- Full **dark mode / light mode** theming via CSS custom properties — no page reload required
-- AI Analysis tab delivering AI-generated clinical insights per patient record
-- Complete appointment management with advanced filtering, booking, and status control
+The platform consists of several integrated systems working together.
 
----
+```text
+                   EL-MOSTAWSAF
 
-### 🛡️ 3. Admin Portal
+          📱 Patient Mobile Application
+                      │
+                      ▼
+             ☁ Secure Backend APIs
+                      │
+      ┌───────────────┼────────────────┐
+      ▼               ▼                ▼
 
-**Key Capabilities:**
-- User CRUD across all roles (Doctors, Patients, Admins) with real-time search and role filtering
-- Appointments overview with filtering by doctor, patient, date, and status
-- System settings: toggle Telemedicine, toggle Maintenance Mode, view API health status
-- Security configuration: AES-256 status, RLS confirmation, JWT timeout settings
+🗄 PostgreSQL     🤖 AI Platform     ❤️ IoT Wearables
 
----
+      │               │                │
 
-### ⌚ 4. IoT Wearable Band
+      └───────────────┼────────────────┘
+                      ▼
 
-**Key Capabilities:**
-- Real-time streaming of **Heart Rate, SpO₂, body temperature**, and physical activity via BLE
-- Local anomaly detection algorithms that trigger alerts even in **offline scenarios**
-- Automatic synchronization with the Flutter mobile app
-- Simultaneous alerts dispatched to both patient (mobile) and physician (dashboard)
+          🌐 Doctor Web Dashboard
+                      │
+                      ▼
 
----
+             🛡 Admin Dashboard
+```
 
-## 🧠 AI & Machine Learning Engine
-
-El-Mostawsaf's AI layer is built on four core technological pillars:
-
-### 1. Hybrid RAG Engine — Arabic Medical Chatbot
-
-| Property | Detail |
-|----------|--------|
-| Architecture | Retrieval-Augmented Generation (RAG) |
-| LLM | Gemini API via LangChain AgentExecutor |
-| Vector Store | ChromaDB + FAISS-CPU (dense retrieval) + BM25 (keyword retrieval) |
-| Knowledge Base | 136,000 balanced Arabic medical Q&A pairs (sourced from Altibbi) |
-| Coverage | 20 medical specialties · 6,800 records each |
-| Language | Colloquial Egyptian Arabic with full NLP preprocessing pipeline |
-
-The chatbot routes queries through a **Dynamic Router-Based Multimodal Architecture** across four specialized pipelines:
-
-- **Q&A RAG Pipeline** — general medical questions from the curated knowledge base
-- **Lab RAG Pipeline** — interprets uploaded lab results against a structured laboratory knowledge base
-- **Vision Pipeline** — fine-tuned model for dermatological and burn classification
-- **Web Search Pipeline** — Tavily Search API integration for real-time medical information
+Each component has a specific responsibility while communicating securely through the backend APIs.
 
 ---
 
-### 2. Medical Vision System — MedGemma-4B & Burn Classification
+# ✨ Key Highlights
 
-| Property | Detail |
-|----------|--------|
-| Model | MedGemma-4B (medically pre-trained Vision-Language Model) |
-| Fine-tuning | PEFT / LoRA via TRL 0.10.0 |
-| Training Hardware | Google Colab T4 GPU |
-| Visual Dataset | ~1,500 captioned medical images localized to Egyptian Arabic |
+- Enterprise-Level Architecture
 
-**Supported Diagnostic Tasks:**
+- Cloud-Based Infrastructure
 
-| Task | Dataset | Accuracy |
-|------|---------|----------|
-| Bone Fracture Detection | MURA (Musculoskeletal Radiographs) | > 90% |
-| Burn Severity Classification (3-class) | Augmented dermatology dataset | 84.4% |
+- AI Medical Assistant
 
----
+- Medical Image Analysis
 
-### 3. Cloud Deployment on Modal Labs
+- Laboratory Report Analysis
 
-Serverless inference deployed on **Modal Labs** using A10G GPU instances, enabling scalable, low-latency AI model serving compatible with AWS, Azure, and GCP environments.
+- Electronic Medical Records
 
----
+- Doctor Web Dashboard
 
-### 4. RESTful AI Gateway (FastAPI)
+- Mobile Healthcare Application
 
-A dedicated FastAPI service exposes all AI capabilities — chatbot, vision inference, lab parsing, and IoT anomaly detection — through secure, versioned REST endpoints.
+- IoT Wearable Integration
 
----
+- Real-Time Patient Monitoring
 
-## 🛠 Tech Stack
+- Emergency Detection
 
-| Layer | Technologies |
-|-------|--------------|
-| **Mobile Frontend** | Flutter (Dart), Provider, Clean Architecture, MVC |
-| **Web Frontend** | HTML5, CSS3, Bootstrap 5, JavaScript ES6+ |
-| **Backend API** | Node.js / Express.js (EMR & Web), FastAPI Python (AI Gateway) |
-| **AI Orchestration** | LangChain (AgentExecutor, Tools, Memory) |
-| **LLM** | Google Gemini API, MedGemma-4B |
-| **Vision / ML** | TensorFlow, Keras, PyTorch 2.2.2, Transformers 4.46.3, PEFT/LoRA |
-| **Vector Database** | ChromaDB, FAISS-CPU 1.9.0, BM25 (Rank-BM25 0.2.2) |
-| **Database** | PostgreSQL via Supabase (RLS), Firebase Firestore & Storage |
-| **Real-Time** | Socket.io, WebSockets, Server-Sent Events (SSE) |
-| **Auth & Security** | JWT, bcrypt, AES-256, HTTPS/TLS, RBAC, Row-Level Security |
-| **PDF Generation** | ReportLab 4.2.5 |
-| **Arabic NLP** | Arabic-Reshaper 3.0 (RTL rendering) |
-| **Containerization** | Docker |
-| **Cloud Deployment** | Modal Labs (Serverless, A10G GPU), AWS / Azure / GCP compatible |
-| **Notifications** | Firebase Cloud Messaging (FCM) |
-| **Dev Environment** | Python 3.10, Conda, WSL2, Google Colab |
+- Secure Authentication
+
+- Role-Based Access Control
+
+- Row-Level Security
+
+- Cloud PostgreSQL Database
+
+- RESTful APIs
+
+- Modular Design
+
+- Scalable Architecture
 
 ---
 
-## 📊 Performance Metrics
+# 📱 Patient Mobile Application
 
-| Model / Component | Metric | Result |
-|-------------------|--------|--------|
-| Bone Fracture Detection (CNN on MURA) | Overall Accuracy | **> 90%** |
-| Burn Severity Classification (3-class) | Overall Accuracy | **84.4%** |
-| MedGemma-4B vs. base Gemma-3 4B | Clinical Benchmark | Consistent gains across all domains |
-| Arabic Medical Chatbot (RAG) | NLG Evaluation (BLEU / ROUGE) | Reported in thesis §5.5.11 |
-| Arabic Knowledge Base | Total Q&A Pairs | **136,000** across 20 specialties |
-| Visual Training Dataset | Captioned Medical Images | **~1,500** localized images |
+The mobile application is designed to provide patients with an intuitive and secure healthcare experience.
+
+### Features
+
+- Secure Registration & Login
+
+- Medical Profile Management
+
+- Electronic Medical Records
+
+- AI Medical Assistant
+
+- Appointment Booking
+
+- Medical Reports
+
+- Laboratory Analysis
+
+- Medical Image Analysis
+
+- Notifications
+
+- Emergency SOS
+
+- Real-Time Health Monitoring
+
+- Wearable Device Integration
+
+- Medical History
+
+- Multi-language Support
 
 ---
 
-## 🚀 Getting Started
+(Add Mobile Screenshots Here)
 
-### Prerequisites
+```
 
-- Flutter SDK v3.x+
-- Python 3.10+ (Conda environment recommended)
-- Node.js v18+
-- PostgreSQL instance (or Supabase project)
-- Firebase project (FCM + Storage)
-- Gemini API key
+---
 
-### Installation
+# 🌟 Patient Experience
+
+The application allows patients to manage their complete healthcare journey from a single platform.
+
+Patients can:
+
+- Book appointments.
+- Consult doctors.
+- Chat with AI.
+- Upload laboratory reports.
+- Analyze medical images.
+- Monitor wearable readings.
+- Receive emergency alerts.
+- Access their complete medical history.
+
+Everything is designed to minimize complexity while maximizing healthcare accessibility.
+
+---
+
+# 🩺 Smart Healthcare Journey
+
+```text
+Patient
+
+↓
+
+Authentication
+
+↓
+
+Medical Dashboard
+
+↓
+
+Appointments
+
+↓
+
+AI Assistant
+
+↓
+
+Medical Reports
+
+↓
+
+Wearable Monitoring
+
+↓
+
+Doctor Consultation
+
+↓
+
+Emergency Services
+```
+
+---
+
+# ❤️ Electronic Medical Records (EMR)
+
+The Electronic Medical Record system acts as the digital backbone of the platform.
+
+Instead of storing medical information across different hospitals and clinics, all authorized healthcare data is centralized securely.
+
+The EMR includes:
+
+- Medical History
+
+- Diagnoses
+
+- Medications
+
+- Laboratory Reports
+
+- Medical Images
+
+- Doctor Notes
+
+- AI Insights
+
+- Emergency Records
+
+- Wearable Data
+
+This enables healthcare professionals to obtain a comprehensive view of each patient's condition while maintaining strict privacy controls.
+
+---
+
+# 🤖 Artificial Intelligence
+
+Artificial Intelligence is one of the core components of El-Mostawsaf.
+
+Instead of replacing doctors, AI assists healthcare professionals by providing intelligent recommendations and automated medical analysis.
+
+The platform integrates several AI-powered services to improve healthcare efficiency and patient outcomes.
+
+
+
+# 🤖 Artificial Intelligence Platform
+
+Artificial Intelligence is the heart of El-Mostawsaf.
+
+Instead of functioning as a simple chatbot, the platform delivers multiple intelligent healthcare services that assist both patients and healthcare professionals throughout the medical journey.
+
+Our AI ecosystem combines Natural Language Processing, Computer Vision, Medical Knowledge Retrieval, and Clinical Decision Support into one unified platform.
+
+---
+
+## 🧠 AI Services
+
+The platform currently provides multiple AI-powered healthcare services.
+
+### 💬 Medical AI Assistant
+
+The intelligent medical assistant helps patients by:
+
+- Understanding medical questions.
+- Explaining diseases and symptoms.
+- Providing medication guidance.
+- Answering healthcare inquiries.
+- Assisting with first-level medical support.
+- Offering health education.
+
+Unlike traditional chatbots, the assistant understands healthcare conversations and provides context-aware responses.
+
+---
+
+### 📄 Laboratory Report Analysis
+
+Patients can upload laboratory reports directly through the mobile application.
+
+The AI automatically:
+
+- Reads laboratory values.
+- Identifies abnormal results.
+- Generates simplified explanations.
+- Highlights potential concerns.
+- Produces structured medical summaries.
+
+This helps patients better understand their reports before consulting a physician.
+
+---
+
+### 🩻 Medical Image Analysis
+
+The system supports AI-assisted medical image interpretation.
+
+Examples include:
+
+- Fracture Detection
+- Burn Classification
+- Medical Image Understanding
+- Diagnostic Assistance
+
+The AI assists healthcare professionals by providing preliminary analysis, while the final medical decision always remains with the doctor.
+
+---
+
+### 🧬 Clinical Decision Support
+
+AI assists physicians by:
+
+- Reviewing available medical data.
+- Analyzing laboratory reports.
+- Processing wearable readings.
+- Highlighting abnormal conditions.
+- Providing intelligent recommendations.
+
+This significantly reduces the time required for reviewing patient information.
+
+---
+
+## 🧠 Retrieval-Augmented Generation (RAG)
+
+Rather than relying only on a language model,
+
+our chatbot uses a Retrieval-Augmented Generation (RAG) architecture.
+
+This allows the AI to retrieve relevant medical knowledge before generating responses.
+
+Benefits include:
+
+- Higher response accuracy.
+- More reliable medical information.
+- Context-aware conversations.
+- Reduced hallucinations.
+- Better healthcare guidance.
+
+---
+
+## ⚡ AI Workflow
+
+```text
+Patient Question
+
+        │
+
+        ▼
+
+Medical AI Assistant
+
+        │
+
+        ▼
+
+Medical Knowledge Retrieval
+
+        │
+
+        ▼
+
+Large Language Model
+
+        │
+
+        ▼
+
+Validated Medical Response
+
+        │
+
+        ▼
+
+Patient
+```
+
+---
+
+# 🌐 Doctor Web Dashboard
+
+The web platform is designed specifically for healthcare professionals.
+
+Instead of focusing on patients,
+
+the dashboard enables doctors to manage their entire clinical workflow through one centralized system.
+
+---
+
+## 👨‍⚕️ Doctor Features
+
+Doctors can:
+
+- View appointments.
+- Access patient records.
+- Review laboratory reports.
+- Monitor wearable readings.
+- Receive AI insights.
+- Manage schedules.
+- Review emergency cases.
+- Update medical records.
+- Track patient history.
+
+---
+
+## 📊 Clinical Dashboard
+
+The dashboard provides a comprehensive overview of:
+
+- Today's appointments.
+- Active patients.
+- Emergency alerts.
+- AI-generated insights.
+- Patient statistics.
+- Medical reports.
+- Wearable status.
+- Pending consultations.
+
+This enables healthcare professionals to make faster and more informed decisions.
+
+---
+
+## 📁 Electronic Medical Records
+
+Doctors can securely access:
+
+- Diagnoses
+- Prescriptions
+- Laboratory Reports
+- Medical Images
+- AI Summaries
+- Patient History
+- Wearable Readings
+
+All information is organized into one unified patient profile.
+
+---
+
+## 📅 Appointment Management
+
+The appointment system enables:
+
+- Online booking.
+- Appointment scheduling.
+- Availability management.
+- Consultation tracking.
+- Appointment history.
+- Status updates.
+
+This simplifies communication between patients and doctors.
+
+---
+
+# ❤️ Smart Wearable Integration
+
+One of the most innovative components of El-Mostawsaf is the wearable healthcare device.
+
+The wearable continuously collects patient health measurements and synchronizes them with the cloud.
+
+---
+
+## ⌚ Real-Time Health Monitoring
+
+The wearable monitors:
+
+❤️ Heart Rate
+
+🫁 Blood Oxygen (SpO₂)
+
+🌡 Body Temperature
+
+🏃 Activity
+
+😴 Sleep Quality
+
+🚨 Emergency Events
+
+---
+
+## ☁ Cloud Synchronization
+
+Health readings are securely synchronized with the backend,
+
+allowing doctors to monitor patient conditions remotely.
+
+The synchronization process is fully automated, providing continuous updates without requiring manual intervention.
+
+---
+
+## 🚨 Emergency Detection
+
+If abnormal readings are detected,
+
+the system can automatically trigger emergency workflows.
+
+Examples include:
+
+- Critical heart rate.
+- Low oxygen level.
+- High temperature.
+- Abnormal wearable readings.
+
+The platform immediately records these events and makes them available to healthcare professionals.
+
+---
+
+## 📈 Remote Patient Monitoring
+
+Doctors can monitor patients without requiring them to visit the hospital.
+
+This supports:
+
+- Continuous healthcare.
+- Chronic disease management.
+- Elderly patient monitoring.
+- Remote follow-up.
+- Preventive healthcare.
+
+---
+
+# 🌍 Integrated Healthcare Experience
+
+Unlike standalone healthcare applications,
+
+El-Mostawsaf combines:
+
+📱 Mobile Application
+
+🌐 Doctor Dashboard
+
+🤖 Artificial Intelligence
+
+🗄 Cloud Database
+
+⌚ Wearable Devices
+
+☁ Cloud Backend
+
+into one connected healthcare ecosystem.
+
+Each component communicates securely with the others, providing a seamless experience for both patients and healthcare professionals.
+
+
+
+# 🔐 Enterprise Security
+
+Security was one of the primary design goals of El-Mostawsaf.
+
+Since the platform manages highly sensitive healthcare information, protecting patient privacy and ensuring secure data access were considered essential requirements throughout the entire development process.
+
+Rather than relying on a single security mechanism, the platform implements a multi-layer security architecture where each layer provides additional protection against potential threats.
+
+---
+
+## 🛡 Authentication
+
+Every user must authenticate before accessing the system.
+
+The platform supports secure authentication for:
+
+- Patients
+- Doctors
+- Administrators
+
+Each authenticated user receives a secure session token that is validated on every request to ensure secure communication with the backend.
+
+---
+
+## 👥 Role-Based Access Control (RBAC)
+
+Different users require different permissions.
+
+The platform implements Role-Based Access Control to guarantee that every user can only access the resources related to their responsibilities.
+
+### Patient
+
+- View personal medical records
+- Book appointments
+- Chat with AI
+- Upload reports
+- Monitor wearable data
+
+---
+
+### Doctor
+
+- Access assigned patients
+- Review medical records
+- Manage appointments
+- View AI insights
+- Monitor wearable devices
+
+---
+
+### Administrator
+
+- Manage users
+- Manage hospitals
+- Monitor system activity
+- Configure platform settings
+
+---
+
+## 🔒 Data Protection
+
+Medical information is one of the most sensitive types of personal data.
+
+To protect patient privacy, the platform applies multiple protection mechanisms including:
+
+- Secure communication
+- Encrypted sensitive information
+- Protected APIs
+- Secure database access
+- Backend validation
+
+This ensures that confidential healthcare information remains protected throughout its lifecycle.
+
+---
+
+## 🔑 JWT Authentication
+
+The backend uses JSON Web Tokens (JWT) to authenticate users securely.
+
+After a successful login:
+
+- A secure token is generated.
+- Every API request includes the token.
+- The backend validates the token.
+- User permissions are verified.
+- Requested resources are returned only if authorized.
+
+This approach enables secure, stateless communication between the client applications and backend services.
+
+---
+
+## 🔐 Row-Level Security (RLS)
+
+Patient privacy is enforced directly at the database level.
+
+Row-Level Security guarantees that users can only access their own records unless additional permissions are explicitly granted.
+
+This provides an additional security layer even if an application-level issue occurs.
+
+---
+
+## 📋 Audit Logging
+
+Every critical operation inside the system is recorded.
+
+Examples include:
+
+- Login attempts
+- Medical record updates
+- Appointment modifications
+- Administrative actions
+- Security events
+
+Audit logs improve accountability, troubleshooting, and security monitoring.
+
+---
+
+## 🚨 Threat Protection
+
+The platform was designed while considering common cybersecurity threats.
+
+Security measures help mitigate risks such as:
+
+- Unauthorized Access
+- SQL Injection
+- Privilege Escalation
+- Data Leakage
+- API Abuse
+- Token Misuse
+- Brute Force Attempts
+
+---
+
+# 🗄 Database Engineering
+
+The platform is powered by PostgreSQL, one of the world's most reliable relational database systems.
+
+The database was carefully designed to support complex healthcare workflows while maintaining high performance and data integrity.
+
+---
+
+## 📊 Database Responsibilities
+
+The database manages:
+
+- User Accounts
+- Medical Records
+- AI Results
+- Appointments
+- Notifications
+- Emergency Events
+- Wearable Readings
+- Medical Images
+- Chat Sessions
+- Doctor Profiles
+- Patient Profiles
+- Analytics
+
+---
+
+## 🏥 Healthcare-Oriented Database Design
+
+Instead of creating isolated tables,
+
+the database was designed around real healthcare relationships.
+
+Patients connect with:
+
+- Doctors
+- Medical Records
+- Appointments
+- AI Analysis
+- Wearables
+- Emergency Cases
+
+This relationship-driven design simplifies healthcare workflows while maintaining consistency.
+
+---
+
+## ☁ Cloud Database
+
+The platform uses a cloud-hosted PostgreSQL database.
+
+Benefits include:
+
+- High Availability
+- Automated Backups
+- Scalability
+- Secure Connections
+- Centralized Data Management
+
+---
+
+# ⚙ Backend Architecture
+
+The backend acts as the central communication hub of the platform.
+
+Every request from the Mobile App or Doctor Dashboard passes through the backend before accessing the database or AI services.
+
+---
+
+## Backend Responsibilities
+
+The backend manages:
+
+- Authentication
+- Authorization
+- Business Logic
+- AI Integration
+- Database Operations
+- Notifications
+- File Management
+- API Validation
+- Error Handling
+
+---
+
+## REST APIs
+
+The backend exposes RESTful APIs that enable secure communication between all platform components.
+
+Examples include:
+
+- Authentication APIs
+- Patient APIs
+- Doctor APIs
+- AI APIs
+- Appointment APIs
+- Wearable APIs
+- Emergency APIs
+
+---
+
+# ☁ Cloud Infrastructure
+
+The platform follows a cloud-native architecture.
+
+Major cloud services include:
+
+- PostgreSQL Cloud Database
+- Secure Storage
+- Backend APIs
+- AI Services
+- File Storage
+
+Cloud infrastructure enables better reliability and future scalability.
+
+---
+
+# 📡 Real-Time Communication
+
+Healthcare requires timely information.
+
+The platform supports real-time communication for:
+
+- Notifications
+- Wearable Updates
+- Emergency Alerts
+- Doctor Monitoring
+
+This allows healthcare professionals to receive critical information immediately.
+
+---
+
+# 📈 Scalability
+
+El-Mostawsaf was designed with future growth in mind.
+
+The modular architecture allows new services to be integrated without affecting existing components.
+
+Future expansions may include:
+
+- Additional AI models
+- Smart Hospitals
+- Insurance Integration
+- Telemedicine
+- Pharmacy Services
+- National Healthcare Integration
+
+---
+
+# 🏗 Engineering Highlights
+
+✔ Enterprise-Level Software Architecture
+
+✔ Cloud-Native Infrastructure
+
+✔ AI-Powered Healthcare
+
+✔ Secure Authentication
+
+✔ JWT Authorization
+
+✔ Row-Level Security
+
+✔ RESTful APIs
+
+✔ PostgreSQL Database
+
+✔ Electronic Medical Records
+
+✔ Wearable IoT Integration
+
+✔ AI Medical Assistant
+
+✔ Medical Image Analysis
+
+✔ Laboratory Analysis
+
+✔ Emergency Detection
+
+✔ Real-Time Monitoring
+
+✔ Scalable Backend
+
+✔ Secure Cloud Storage
+
+✔ Modular Design
+
+✔ Healthcare Data Protection
+
+✔ Production-Oriented Architecture
+
+---
+
+# 💡 Why This Project Stands Out
+
+El-Mostawsaf is far more than a university graduation project.
+
+It demonstrates the integration of multiple modern software engineering disciplines into one production-oriented healthcare platform.
+
+The project combines:
+
+- Mobile Development
+- Web Development
+- Backend Engineering
+- Artificial Intelligence
+- Medical Data Management
+- IoT Integration
+- Cloud Computing
+- Cybersecurity
+- Database Engineering
+
+This multidisciplinary approach reflects real-world enterprise software development practices and showcases the ability to design, build, and integrate complex systems within a unified healthcare ecosystem.
+
+
+
+
+
+# 📸 Project Gallery
+
+> *The following section showcases the user experience across different components of the platform.*
+
+## 📱 Patient Mobile Application
+
+(Add Mobile Screenshots Here)
+
+- Login
+- Registration
+- Home Dashboard
+- AI Assistant
+- Medical Records
+- Appointments
+- Laboratory Analysis
+- Medical Image Analysis
+- Emergency
+- Wearable Monitoring
+
+---
+
+## 🌐 Doctor Dashboard
+
+(Add Doctor Dashboard Screenshots Here)
+
+- Dashboard
+- Patient Management
+- Medical Records
+- AI Insights
+- Appointments
+- Analytics
+- Emergency Cases
+
+---
+
+## 🛡 Admin Dashboard
+
+(Add Admin Dashboard Screenshots Here)
+
+- User Management
+- Hospital Management
+- Statistics
+- Platform Monitoring
+- System Settings
+
+---
+
+## 🤖 Artificial Intelligence
+
+(Add AI Screenshots Here)
+
+- Medical Chatbot
+- Laboratory Report Analysis
+- Medical Image Analysis
+- AI Recommendations
+
+---
+
+## ❤️ Wearable Device
+
+(Add Wearable Images Here)
+
+- Device
+- BLE Connection
+- Real-Time Monitoring
+- Sensor Readings
+
+---
+
+# 🎥 Project Demonstration
+
+A complete demonstration of the platform can be viewed below.
+
+🎬 Demo Video
+
+(Add Demo Video Link)
+
+---
+
+# 📂 Project Structure
+
+```text
+El-Mostawsaf
+
+│
+
+├── 📱 Mobile Application (Flutter)
+
+├── 🌐 Doctor Dashboard
+
+├── 🛡 Admin Dashboard
+
+├── ⚙ Backend APIs
+
+├── 🤖 AI Services
+
+├── 🗄 Database
+
+├── ❤️ Wearable IoT
+
+├── 📄 Documentation
+
+└── 🎓 Graduation Book
+```
+
+---
+
+# 🛠 Installation
+
+## Clone Repository
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/A_235_s/El-Mostawsaf.git
-cd El-Mostawsaf
+git clone https://github.com/USERNAME/El-Mostawsaf.git
+```
 
-# 2. Backend — Node.js (EMR & Web API)
-cd backend_api
-npm install
-# Configure .env with SUPABASE_URL, JWT_SECRET, etc.
-npm start
+---
 
-# 3. Backend — FastAPI (AI Gateway)
-cd ../ai_engine
-pip install -r requirements.txt
-# Configure .env with GEMINI_API_KEY, model paths, etc.
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+## Mobile
 
-# 4. Mobile App (Flutter)
-cd ../patient_app
+```bash
 flutter pub get
+
 flutter run
-
-# 5. Docker (Optional — runs all services)
-cd ..
-docker-compose up --build
-```
-
-### Project Structure
-
-```
-El-Mostawsaf/
-├── patient_app/          # Flutter mobile application
-│   └── lib/
-│       ├── core/         # Config, constants, utilities
-│       ├── data/         # Repositories, API clients, models
-│       ├── domain/       # Business logic, use cases, entities
-│       └── presentation/ # UI screens, widgets, providers
-├── backend_api/          # Node.js / Express.js EMR backend
-│   ├── routes/           # REST API route definitions
-│   ├── middleware/       # JWT auth, RBAC, error handling
-│   └── db/               # Supabase/PostgreSQL queries
-├── ai_engine/            # FastAPI AI gateway
-│   ├── rag/              # RAG pipeline (ChromaDB, FAISS, BM25)
-│   ├── vision/           # MedGemma-4B inference
-│   ├── lab/              # Lab report NLP parser
-│   └── iot/              # Wearable telemetry + anomaly detection
-├── web_dashboard/        # Doctor & Admin web portals
-│   ├── admin/
-│   └── doctor/
-└── docs/                 # Project thesis and documentation
-    └── images/           # Architecture diagrams and screenshots
 ```
 
 ---
 
-## 🎓 Project Team
+## Backend
 
-**Graduation Project 2025–2026**  
-Benha University | Faculty of Engineering at Shoubra  
-Communication and Computer Engineering Department
+```bash
+pip install -r requirements.txt
 
-*Submitted as partial fulfillment of the requirements for the degree of Bachelor of Science in Electrical Engineering (Computer & Communication Systems Engineering)*
-
-**Supervised by:** Dr. Shimaa Ibrahim
-
-| Name | ID | Role |
-|------|----|------|
-| Abdelhakim Elsayed Abdelhakim | 231903594 | Lead Flutter Developer & AI Integration |
-| Mohamed Emad Fawzy | 231903548 | Backend & API Orchestration |
-| Saif Emad Shaheen | 231903756 | AI Model Development & Research |
-| Omar Masoud Mohamed | 231903652 | System Architecture & Database |
-| Abdelrahman Tarek Salah | 231903611 | Web Frontend & UI/UX |
-| Shady Mohamed Fathy | 221902907 | IoT & Hardware Engineering |
+uvicorn app.main:app --reload
+```
 
 ---
 
-## 🔭 Future Roadmap
+## Environment Variables
 
-- **Offline AI** — TensorFlow Lite on-device models for basic analysis without internet connectivity
-- **HL7/FHIR Integration** — Interoperability with national hospital information systems
-- **Expanded Wearable Support** — Compatibility with Apple Watch, Garmin, and Fitbit
-- **Medication Reminder System** — Intelligent notification engine to improve patient adherence
-- **Family Health Sharing** — Caregiver accounts for remote family health monitoring
-- **Prescription Module** — Digital prescriptions linked directly to appointment records
-- **Formal HIPAA/GDPR Audit** — Compliance certification for international deployment
-- **Insurance & Billing Module** — Automated invoice generation for consultations
-- **Improved Vision Models** — Extended datasets for dermatology and ophthalmology
+Create your `.env` file.
 
----
+```env
+SUPABASE_URL=
 
-## 📄 License
+SUPABASE_KEY=
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
+DATABASE_URL=
+
+JWT_SECRET=
+
+GEMINI_API_KEY=
+```
 
 ---
 
-## 🔗 Official References
+# 🚀 Technology Stack
 
-For the authoritative and complete documentation of El-Mostawsaf, refer only to the following sources:
+## 📱 Mobile
 
-- 📝 **Medium Article** — *How El-Mostawsaf is redefining healthcare with AI*
-- 📄 **LinkedIn Article** — *Top 5 HealthTech Projects in Egypt 2026*
-- 🌐 **Official Landing Page**
-- 📚 **Benha University Graduation Projects Registry**
+- Flutter
+- Dart
 
-> ⚠️ **Disclaimer:** Any GitHub repository with a similar name (e.g., `El-Mostawsaf-HomeNursingPlatform`) is **not affiliated** with this project. This repository is the sole and original source of the El-Mostawsaf ecosystem.
+---
+
+## 🌐 Web
+
+- React
+- TypeScript
+- Tailwind CSS
+
+---
+
+## ⚙ Backend
+
+- Python
+- FastAPI
+- REST APIs
+
+---
+
+## 🤖 Artificial Intelligence
+
+- Google Gemini
+- LangChain
+- RAG
+- MedGemma Vision
+- NLP
+
+---
+
+## 🗄 Database
+
+- PostgreSQL
+- Supabase
+
+---
+
+## ☁ Cloud
+
+- Supabase Cloud
+- Object Storage
+- Cloud APIs
+
+---
+
+## ❤️ IoT
+
+- ESP32
+- BLE
+- Health Sensors
+
+---
+
+# 📚 Documentation
+
+The project is fully documented.
+
+Included documentation covers:
+
+- System Analysis
+
+- Software Requirements
+
+- Architecture Design
+
+- Database Design
+
+- Backend Design
+
+- Mobile Development
+
+- AI Implementation
+
+- IoT Integration
+
+- Security Architecture
+
+- Testing
+
+- Deployment
+
+- Future Work
+
+---
+
+# 🧪 Testing
+
+The project was evaluated through multiple testing stages including:
+
+- Authentication Testing
+
+- API Testing
+
+- Database Validation
+
+- AI Evaluation
+
+- Wearable Integration Testing
+
+- User Acceptance Testing
+
+- Security Validation
+
+---
+
+# 🚀 Future Roadmap
+
+Future versions of El-Mostawsaf may include:
+
+- Telemedicine Video Calls
+
+- AI Disease Prediction
+
+- Smart Ambulance Integration
+
+- National EMR Integration
+
+- Health Insurance Integration
+
+- PACS Integration
+
+- Pharmacy Integration
+
+- Voice AI Assistant
+
+- Smart Hospital Analytics
+
+- Predictive Healthcare Models
+
+---
+
+# 🏆 Project Achievements
+
+✔ Complete Healthcare Ecosystem
+
+✔ Enterprise Software Architecture
+
+✔ AI Integration
+
+✔ Cloud Infrastructure
+
+✔ Medical IoT Integration
+
+✔ Electronic Medical Records
+
+✔ Doctor Dashboard
+
+✔ Patient Mobile Application
+
+✔ Secure Authentication
+
+✔ Real-Time Monitoring
+
+✔ Healthcare Database Engineering
+
+✔ RESTful APIs
+
+✔ AI Medical Assistant
+
+✔ Medical Image Analysis
+
+✔ Laboratory Analysis
+
+✔ Emergency Management
+
+✔ Modern UI/UX
+
+✔ Modular Development
+
+✔ Scalable Design
+
+---
+
+# 👨‍💻 Development Team
+
+This project was designed and developed as a Graduation Project by students from
+
+**Faculty of Engineering at Shoubra**
+
+**Benha University**
+
+Each member contributed to different areas of the system including:
+
+- Mobile Development
+
+- Backend Engineering
+
+- Artificial Intelligence
+
+- Database Engineering
+
+- IoT Integration
+
+- Web Development
+
+- UI/UX Design
+
+---
+
+# 🤝 Contributions
+
+This repository is intended for academic and portfolio purposes.
+
+Feedback, suggestions, and professional discussions are always welcome.
+
+---
+
+# 💼 Open for Opportunities
+
+We are passionate software engineers interested in solving real-world healthcare challenges through modern technologies.
+
+This project reflects our experience in:
+
+- Mobile Development
+
+- Backend Engineering
+
+- Artificial Intelligence
+
+- Cloud Computing
+
+- Database Engineering
+
+- Cybersecurity
+
+- IoT Systems
+
+- Enterprise Software Architecture
+
+We are always excited to connect with recruiters, software engineers, healthcare innovators, and technology companies.
+
+---
+
+# ⭐ Support
+
+If you found this project interesting,
+
+please consider giving it a ⭐ on GitHub.
+
+Your support motivates us to continue building impactful software.
+
+---
+
+# 📜 License
+
+This repository is published for educational and portfolio purposes.
+
+All rights reserved.
+
+The source code remains private.
 
 ---
 
 <div align="center">
 
-Built with ❤️ for a Healthier Egypt
+# ❤️ El-Mostawsaf
 
-**El-Mostawsaf — Bridging the gap between medical data and actionable insights.**
+### Transforming Healthcare Through Artificial Intelligence
+
+*"Building the future of smart healthcare with AI, Cloud Computing, IoT, and Secure Software Engineering."*
+
+---
+
+### Thank you for visiting our project.
+
+⭐ Don't forget to star the repository!
 
 </div>
